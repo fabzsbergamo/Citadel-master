@@ -1,0 +1,13 @@
+
+.box {
+    background: url(/src/assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 50px;
+}
