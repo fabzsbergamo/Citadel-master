@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.css'
 import Welcome from './components/Welcome'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <GridItem area='main' bg='dodgerblue'>
       <Welcome/>
     </GridItem>
-    <GridItem area='footer' bg='dodgerblue'>Footer</GridItem>
+    <GridItem area='footer' bg='dodgerblue'>
+      <Footer/></GridItem>
   </Grid>
 }
 
