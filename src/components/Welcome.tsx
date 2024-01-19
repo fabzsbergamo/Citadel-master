@@ -11,7 +11,7 @@ const Welcome = () => {
       <h1 className={styles.h1}>We Protect your Lifetime’s Work</h1>
       <p className={styles.p}>Ensure your wishes are fulfilled, assets protected, and remove any unnecessary burden for your family and loved ones at the very worst time.</p>
       </div>
-    <Button as='a' target='_blank' variant='outline' href='https://chakra-ui.com'>
+    <Button as='a' target='_blank' variant='outline' href='https://chakra-ui.com' fontSize={'13px'}>
           Book your free Review today
     </Button>
     </Box>
