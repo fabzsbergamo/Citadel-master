@@ -1,13 +1,27 @@
 
 .box {
     background: url(/src/assets/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
   font-weight: bold;
   font-size: 50px;
+  padding: 10%;
+}
+
+.h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.p {
+  font-size: 2rem;
+  text-align: left;
 }

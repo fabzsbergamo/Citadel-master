@@ -9,10 +9,10 @@ import Footer from './components/Footer'
 function App() {
  
   return <Grid templateAreas={`"nav" "main" "footer"`}>
-    <GridItem area='nav'>
+    <GridItem area='nav' bg='dodgerblue'>
       <Navbar/>
     </GridItem>
-    <GridItem area='main' bg='dodgerblue'>
+    <GridItem area='main'>
       <Welcome/>
     </GridItem>
     <GridItem area='footer' bg='dodgerblue'>
