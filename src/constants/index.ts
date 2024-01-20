@@ -23,16 +23,16 @@ interface navLinks {
 
 export const navLinks = [
   {
-    id: "start now",
-    title: "Start now",
+    id: "home",
+    title: "Home",
   },
   {
-    id: "weather",
-    title: "Weather",
+    id: "about us",
+    title: "About Us",
   },
   {
-    id: "Reviews",
-    title: "Reviews",
+    id: "our services",
+    title: "Our  Services",
   },
   {
     id: "contact us",
