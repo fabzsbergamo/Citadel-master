@@ -2,8 +2,8 @@ import { Grid, GridItem } from '@chakra-ui/react'
 import './App.css'
 import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.css'
-import Welcome from './components/Welcome'
 import Footer from './components/Footer'
+import Home from './home'
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Navbar/>
     </GridItem>
     <GridItem area='main'>
-      <Welcome/>
+      <Home/>
     </GridItem>
     <GridItem area='footer' bg='dodgerblue'>
       <Footer/></GridItem>
