@@ -1,21 +1,27 @@
 import { Grid, GridItem } from '@chakra-ui/react'
 import './App.css'
+import {Route, Redirect, Switch} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.css'
 import Footer from './components/Footer'
 import Home from './home'
+import TermsAndConditions from './termsAndConditions'
 
 
 function App() {
  
   return <Grid templateAreas={`"nav" "main" "footer"`}>
-    <GridItem area='nav' bg='dodgerblue'>
+    <GridItem area='nav' bg='white'>
       <Navbar/>
     </GridItem>
     <GridItem area='main'>
-      <Home/>
+      <Switch>
+      <Route path="/Home" component={Home}></Route>
+      <Route path="/TermsAndConditions" component={TermsAndConditions}></Route>
+      <Redirect from="/" exact to="Home"/>
+      </Switch>
     </GridItem>
-    <GridItem area='footer' bg='dodgerblue'>
+    <GridItem area='footer' bg='lightgrey'>
       <Footer/></GridItem>
   </Grid>
 }

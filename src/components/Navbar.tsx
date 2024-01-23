@@ -1,9 +1,10 @@
-import { Box, Flex, Grid, GridItem, HStack, Hide, Image, Link, LinkBox, List, ListItem, Show, Text, UnorderedList } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Grid, GridItem, HStack, Hide, Image, Link, LinkBox, List, ListItem, Show, Text, UnorderedList } from '@chakra-ui/react'
 import logo from '../assets/Untitled_Artwork.png'
 import { useState } from "react";
 import close from '../assets/close.svg';
 import menu from '../assets/menu.svg'
 import { navLinks } from "../constants";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -65,18 +66,11 @@ const Navbar = () => {
           </Grid>
           <Grid area='nav'>
           <Show above='md'>
-            <HStack>
-              {navLinks.map((nav, index) => (
-             <Box
-                w="100%"
-                bg="White"
+            <HStack paddingLeft='20%' paddingRight='20%' justifyContent="space-between">
+              {navLinks.map((nav) => (
+             <NavLink
                 key={nav.id}
-                className={`${
-                active === nav.title ? "text-white underline ..." : "text-white"
-                } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-                onClick={() => setActive(nav.title)}>
-              <Link href={`#${nav.id}`}>{nav.title}</Link>
-             </Box>
+                className="nav-item nav-link" to={nav.id}>{nav.title}</NavLink>
                ))}
             </HStack>
           </Show>
