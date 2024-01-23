@@ -15,8 +15,8 @@ const Navbar = () => {
           <Grid area={'header'} templateColumns='repeat(5, 1fr)'>
             <GridItem colStart={0} colEnd={2} >
               <Show above='md'>
-              <Box paddingLeft='15'>
-                  <Image src={logo} maxW='250' />
+              <Box paddingLeft='15'><NavLink to="/">
+                  <Image src={logo} maxW='250'/></NavLink>
               </Box>
               </Show>
               <Show below='md'>
