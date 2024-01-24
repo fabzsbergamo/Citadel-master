@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Footer from './components/Footer'
 import Home from './home'
 import TermsAndConditions from './termsAndConditions'
+import PrivacyPolicy from './privacyPolicy'
+import ComplaintsProcedure from './complaintsProcedure'
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <Switch>
       <Route path="/Home" component={Home}></Route>
       <Route path="/TermsAndConditions" component={TermsAndConditions}></Route>
+      <Route path="/PrivacyPolicy" component={PrivacyPolicy}></Route>
+      <Route path="/ComplaintsProcedure" component={ComplaintsProcedure}></Route>
       <Redirect from="/" exact to="Home"/>
       </Switch>
     </GridItem>
