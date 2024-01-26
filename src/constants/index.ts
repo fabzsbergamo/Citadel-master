@@ -3,6 +3,7 @@
 interface navLinks {
   id: string;
   title: string;
+  url: string;
 }
 
 // interface footerLinks {
@@ -25,18 +26,22 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
+    url: "/"
   },
   {
     id: "about us",
     title: "About Us",
+    url: "/AboutUs"
   },
   {
     id: "our services",
     title: "Our  Services",
+    url:"/OurServices"
   },
   {
     id: "contact us",
     title: "Contact Us",
+    url: "/ContactUs"
   },
 ];
 
