@@ -70,7 +70,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
              <NavLink
                 key={nav.id}
-                className="nav-item nav-link" to={nav.id}>{nav.title}</NavLink>
+                className="nav-item nav-link" to={nav.url}>{nav.title}</NavLink>
                ))}
             </HStack>
           </Show>
