@@ -9,6 +9,7 @@ import TermsAndConditions from './termsAndConditions'
 import PrivacyPolicy from './privacyPolicy'
 import ComplaintsProcedure from './complaintsProcedure'
 import AboutUs from './aboutUs'
+import ContactUs from './ContactUs'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path="/PrivacyPolicy" component={PrivacyPolicy}></Route>
       <Route path="/ComplaintsProcedure" component={ComplaintsProcedure}></Route>
       <Route path="/AboutUs" component={AboutUs}></Route>
+      <Route path="/ContactUs" component={ContactUs}></Route>
       <Redirect from="/" exact to="Home"/>
       </Switch>
     </GridItem>

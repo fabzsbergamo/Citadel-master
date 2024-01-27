@@ -1,13 +1,15 @@
 import './aboutUs.module.scss'
 import 'bootstrap/dist/css/bootstrap.css'
-import Welcome from './components/Welcome'
+import Contactform from './components/Contactform'
 
 
-function contactUs() {
+const ContactUs = () => {
  
-  return
-      <Welcome/>
-  
+  return (
+    <>
+      <Contactform/>
+    </>
+  )
 }
 
-export default contactUs
+export default ContactUs

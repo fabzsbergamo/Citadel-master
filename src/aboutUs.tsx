@@ -2,6 +2,7 @@ import './aboutUs.module.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Box, Button, Card, CardBody, CardFooter, CardHeader, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import styles from "./aboutUs.module.scss"
+import Contactform from './components/Contactform'
 
 const AboutUs = () => {
  
