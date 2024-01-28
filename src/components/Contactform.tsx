@@ -1,4 +1,4 @@
-import { Box, FormControl, FormErrorMessage, FormHelperText, FormLabel, Input } from '@chakra-ui/react'
+import { Box, Button, FormControl, FormErrorMessage, FormHelperText, FormLabel, Input } from '@chakra-ui/react'
 import 'bootstrap/dist/css/bootstrap.css'
 import { SetStateAction, useState } from 'react'
 
@@ -19,7 +19,6 @@ const contactForm = () =>  {
         <FormLabel>Last name</FormLabel>
         <Input placeholder='First name' />
 
-
         <FormLabel>Email</FormLabel>
         <Input type='email' value={input} onChange={handleInputChange} />
         {!isError ? (
@@ -30,6 +29,10 @@ const contactForm = () =>  {
           <FormErrorMessage>Email is required.</FormErrorMessage>
         )}
 
+        <FormLabel>Message</FormLabel>
+        <Input placeholder='First name' />
+
+        <Button>Submit</Button>
 
 
       </FormControl>
