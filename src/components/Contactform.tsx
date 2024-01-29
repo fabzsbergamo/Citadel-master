@@ -17,7 +17,7 @@ const contactForm = () =>  {
         <Input placeholder='First name' />
 
         <FormLabel>Last name</FormLabel>
-        <Input placeholder='First name' />
+        <Input placeholder='Last name' />
 
         <FormLabel>Email</FormLabel>
         <Input type='email' value={input} onChange={handleInputChange} />
@@ -30,7 +30,7 @@ const contactForm = () =>  {
         )}
 
         <FormLabel>Message</FormLabel>
-        <Input placeholder='First name' />
+        <Input/>
 
         <Button>Submit</Button>
 
