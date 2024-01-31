@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Grid templateAreas={`"header" "nav"`} color='blackAlpha.700'> 
+    <Grid templateAreas={`"header" "nav"`} color='blackAlpha.700' paddingBottom={'10px'}> 
           <Grid area={'header'} templateColumns='repeat(5, 1fr)'>
             <GridItem colStart={0} colEnd={2} >
               <Show above='md'>
@@ -66,7 +66,7 @@ const Navbar = () => {
           </Grid>
           <Grid area='nav'>
           <Show above='md'>
-            <HStack paddingLeft='20%' paddingRight='20%' justifyContent="space-between">
+            <HStack paddingLeft='20%' paddingRight='20%' justifyContent="space-between" fontSize={'15px'}>
               {navLinks.map((nav) => (
              <NavLink
                 key={nav.id}
